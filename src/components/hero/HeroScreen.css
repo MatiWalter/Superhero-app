@@ -1,0 +1,12 @@
+.hero {
+  border-radius: 5px;
+  cursor: pointer;
+  max-height: 70vh;
+  max-width: 300px;
+  min-width: 260px;
+  overflow: hidden;
+}
+
+.hero img:hover {
+  border: 1px solid #212124;
+}

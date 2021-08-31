@@ -1,0 +1,73 @@
+.hero-card {
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 2%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.hero-card img {
+    filter: brightness(70%);
+    max-height: 400px; 
+    max-width: 300px;
+    min-width: 260px;
+    position: relative;
+    transition: all 0.15s linear;
+}
+
+.hero-card .profile-name {
+    bottom: 30px;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    left: 20px;
+    position: absolute;
+}
+
+.hero-card .profile-alignment {
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    left: 0;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.flipped .back {
+    transform: rotateY(0deg);
+}
+
+.back {
+    backface-visibility: hidden;
+    /* background-color: rgba(33, 33, 33, 0.5); */
+    border-radius: 5px;
+    bottom: 0;
+    color: #FFF;
+    margin-bottom: 2.2%;
+    margin-left: 1.1%;
+    min-height: 400px;
+    min-width: 285px;
+    position: absolute;
+    transform: rotateY(-180deg);
+    transition: transform ease 500ms;
+}
+
+.back img {
+    z-index: -2;
+    position: inherit;
+    opacity: 0.2;
+}
+
+.front {
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    transition: transform ease 500ms;
+    z-index: 2;
+}
